@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SmsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarSms"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/toolBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Мои контакты."
+        app:titleTextColor="@color/material_dynamic_tertiary40"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nameDataTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="34dp"
+            android:textSize="30dp"
+            android:hint="name"/>
+
+        <TextView
+            android:id="@+id/phoneDataTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="34dp"
+            android:textSize="30dp"
+            android:hint="phone"/>
+
+        <EditText
+            android:id="@+id/messageET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="34dp"
+            android:textSize="30dp"
+            android:hint="sms message"/>
+
+        <Button
+            android:id="@+id/sendBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:text="Send SMS" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
